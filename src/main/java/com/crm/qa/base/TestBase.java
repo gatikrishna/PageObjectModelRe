@@ -23,6 +23,7 @@ public class TestBase {
 
 	public TestBase() {
 
+		//Reding files hgt
 		try {
 			prop = new Properties();
 			FileInputStream fileInputStrm = new FileInputStream(
