@@ -6,7 +6,7 @@
 	<groupId>FreeCRMTestAutomation</groupId>
 	<artifactId>FreeCRMTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
 	<name>FreeCRMTest</name>
 	<url>http://maven.apache.org</url>

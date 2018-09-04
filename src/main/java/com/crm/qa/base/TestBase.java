@@ -38,18 +38,19 @@ public class TestBase {
 	}
 
 	public static void initialization() {
+		String driver_path = "D:\\Soft\\driver\\";
 		String browser = prop.getProperty("browser");
 		long PAGE_LOAD_TIMEOUT = Long.parseLong(prop.getProperty("page_load_timeout"));
 		long IMPLICIT_WAIT = Long.parseLong(prop.getProperty("implicit_wait"));
 
 		if (browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "D:\\selenium_drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", driver_path+"chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("ie")) {
-			System.setProperty("webdriver.ie.driver", "D:\\selenium_drivers\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", driver_path+"IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		} else if (browser.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "D:\\selenium_drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", driver_path+"geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		
